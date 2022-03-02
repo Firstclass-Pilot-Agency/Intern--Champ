@@ -926,7 +926,6 @@ div.img-shop:hover {
 
   
 .product {
-  margin-bottom: 150px;
   height: 100%;
   padding: 0;
 }
@@ -943,7 +942,7 @@ div.img-shop:hover {
   column-gap: 15px;
   width: 100%;
   margin-bottom: 200px;
-  height: 500px;
+  height: 100%;
 }
 
 .img-sales {
