@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+	border: 2px solid;
   padding: 0px;
   margin: 0px;
 }
@@ -178,8 +179,6 @@ div.svg {
 }
 
 .brands-companies {
-  display: flex;
-  justify-content: space-between;
   padding: 1em;
   align-items: center;
   margin-bottom: 2rem;
@@ -189,8 +188,11 @@ div.svg {
 }
 
 .first-company {
-  display: flex;
-  gap: 25px;
+  display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: auto auto;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .first-company a {
@@ -867,64 +869,59 @@ div.img-shop:hover {
     margin-bottom: 150px;
   }
 
-  .brands-companies {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-direction: column;
-    padding: 1em;
-    align-items: center;
-    margin-bottom: 10%;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0 0px 8px -6px black;
-  }
+	.brands-companies .first-company {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		overflow: hidden;
+		padding: 8px;
+		height: 300px;
+		border-radius: 5px;
+	}
 
-  .one {
-    width: 100%;
-    display: flex;
-  }
+	.second {
+		grid-row: 1/3;
+		grid-column: 3/4;
+	}
 
-  .one a {
-    width: 100%;
-    margin: 10px;
-  }
+	.middle {
+		grid-row: 2/3;
+		grid-column: 2/3;
+	}
 
-  .two {
-    width: 100%;
-    display: flex;
-  }
+	.forth {
+		grid-row: 3/3;
+		grid-column: 1/2;
+	}
 
-  .two a {
-    width: 100%;
-    margin: 10px;
-  }
+	.last {
+		grid-row: 3/3;
+		grid-column: 3/4;
+	}
 
-  .three {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+	.first-company a {
+		display: flex;
+		justify-content: center;
+		background-color: white;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		padding: 1em 1em 1em 2em;
+		border-radius: 10px;
+		box-shadow: 0 0px 8px -6px black;
+		width: 100px;
+		height: 70px;
+		transition: 0.5s ease-in-out;
+	}
+	
+	.first-company a:hover {
+		border-bottom: 1px solid red;
+		border-top: 1px solid cyan;
+	}
+	
+	.first-company a > img {
+		display: block;
+		width: 100px;
+	}
 
-  .three a {
-    width: 100%;
-    margin: 10px;
-  }
-
-  .brands-companies .three a > img{
-    padding: 0;
-  }
-  
-  .first-company a:hover {
-    border-bottom: 1px solid red;
-    border-top: 1px solid cyan;
-  }
-  
-  .first-company a > img {
-    padding-left: 0px;
-  }
-
-  
 .product {
   height: 100%;
   padding: 0;
