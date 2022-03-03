@@ -769,6 +769,35 @@ div.img-shop:hover {
     width: 100%;
   }
 
+	.brands-companies .first-company {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		overflow: hidden;
+		padding: 8px;
+		height: 300px;
+		border-radius: 5px;
+	}
+
+	.second {
+		grid-row: 1/3;
+		grid-column: 3/4;
+	}
+
+	.middle {
+		grid-row: 2/3;
+		grid-column: 2/3;
+	}
+
+	.forth {
+		grid-row: 3/3;
+		grid-column: 1/2;
+	}
+
+	.last {
+		grid-row: 3/3;
+		grid-column: 3/4;
+	}
+
   .product {
     margin-bottom: 0px;
     height: 100%;
