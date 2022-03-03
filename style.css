@@ -189,22 +189,19 @@ div.svg {
 .first-company {
   display: grid;
 	grid-template-columns: auto auto auto auto auto;
-	grid-template-rows: auto auto;
 	width: 100%;
 	justify-content: space-between;
 }
 
 .first-company a {
-  display: flex;
-  justify-content: center;
   background-color: white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  padding: 1em 1em 1em 2em;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0px 8px -6px black;
-  width: 100px;
-  height: 70px;
+  width: 120px;
+  height: 60px;
   transition: 0.5s ease-in-out;
 }
 
@@ -213,8 +210,8 @@ div.svg {
   border-top: 1px solid cyan;
 }
 
-.first-company a > img {
-  display: block;
+.first-company a > p {
+  text-align: center;
 }
 
 .product {
@@ -773,7 +770,6 @@ div.img-shop:hover {
 		grid-template-columns: auto auto auto;
 		overflow: hidden;
 		padding: 8px;
-		height: 300px;
 		border-radius: 5px;
 	}
 
@@ -927,20 +923,20 @@ div.img-shop:hover {
 	}
 
 	.first-company a {
-		display: flex;
-		justify-content: center;
 		background-color: white;
 		border-top: 1px solid white;
 		border-bottom: 1px solid white;
-		padding: 1em 1em 1em 2em;
+		padding: 20px;
 		border-radius: 10px;
 		box-shadow: 0 0px 8px -6px black;
 		width: 100px;
-		height: 70px;
+		height: 60px;
 		transition: 0.5s ease-in-out;
 	}
+
 	
 	.first-company a:hover {
+		color: #000000;
 		border-bottom: 1px solid red;
 		border-top: 1px solid cyan;
 	}
