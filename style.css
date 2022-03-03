@@ -940,11 +940,6 @@ div.img-shop:hover {
 		border-bottom: 1px solid red;
 		border-top: 1px solid cyan;
 	}
-	
-	.first-company a > img {
-		display: block;
-		width: 100px;
-	}
 
 .product {
   height: 100%;
